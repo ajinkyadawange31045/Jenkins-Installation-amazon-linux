@@ -10,12 +10,16 @@ sudo yum update -y
 
 Install java packages and remove the oldest version of java if any:
 ```bash
-sudo yum install java-1.8.0
+sudo yum install java
 ```
 ```bash
 sudo yum remove java-1.7.0-openjdk
 ```
 
+inorder to switch in the versions in java:
+```bash
+sudo /usr/sbin/alternatives --config java
+```
 Add the Jenkins repo using the following command:
 ```bash
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
