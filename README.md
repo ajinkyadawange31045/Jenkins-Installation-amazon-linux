@@ -14,7 +14,7 @@ sudo yum install java-1.8.0
 ```
 ```bash
 sudo yum remove java-1.7.0-openjdk
-```bash
+```
 
 Add the Jenkins repo using the following command:
 ```bash
