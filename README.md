@@ -17,6 +17,7 @@ sudo yum remove java-1.7.0-openjdk
 ```
 
 inorder to switch in the versions in java:
+press the index number according to the version you want to select, as per my observation, jenkins is running well on java 17 version.
 ```bash
 sudo /usr/sbin/alternatives --config java
 ```
