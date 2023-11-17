@@ -43,6 +43,7 @@ Start and enable the Jenkins service:
 ```bash
 sudo systemctl start jenkins
 ```
+if it doesn't start, check for the java version, jenkins version, and search for their compatibility online and upgrade or downgrade the versions if required.
 ```bash
 sudo systemctl enable jenkins
 ````
