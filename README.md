@@ -47,6 +47,7 @@ if it doesn't start, check for the java version, jenkins version, and search for
 ```bash
 sudo systemctl enable jenkins
 ````
+reinstall the jenkins if still it doesn't works.
 
 You can check the status of the Jenkins service using the command:
 ```bash
