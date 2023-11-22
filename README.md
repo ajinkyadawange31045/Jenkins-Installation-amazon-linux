@@ -10,44 +10,39 @@ sudo yum update -y
 
 Install java packages and remove the oldest version of java if any:
 ```bash
-sudo yum install java
+sudo yum install java-1.8.0
 ```
 ```bash
 sudo yum remove java-1.7.0-openjdk
 ```
 
-inorder to switch in the versions in java:
-press the index number according to the version you want to select, as per my observation, jenkins is running well on java 17 version.
-```bash
-sudo /usr/sbin/alternatives --config java
-```
 Add the Jenkins repo using the following command:
 ```bash
-sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
 ```
 
 Import a key file from Jenkins-CI to enable installation from the package:
 ```bash
-sudo rpm — import https://pkg.jenkins.io/redhat/jenkins.io.key
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 ```
 ```bash
-sudo yum upgrade
+sudo dnf upgrade
 ```
 
 Install Jenkins using the below command:
 ```bash
-sudo yum install jenkins -y
+sudo dnf install jenkins
+sudo systemctl daemon-reload
 ```
 
 Start and enable the Jenkins service:
 ```bash
-sudo systemctl start jenkins
-```
-if it doesn't start, check for the java version, jenkins version, and search for their compatibility online and upgrade or downgrade the versions if required.
-```bash
 sudo systemctl enable jenkins
+```
+```bash
+sudo systemctl start jenkins
 ````
-reinstall the jenkins if still it doesn't works.
 
 You can check the status of the Jenkins service using the command:
 ```bash
@@ -62,3 +57,4 @@ Add the user credentials and save it.
 
 Installation and configuration are completed and now you can start creating the Jenkins jobs.
 
+Source - https://www.jenkins.io/doc/book/installing/linux/#fedora
