@@ -10,7 +10,7 @@ sudo yum update -y
 
 Install java packages and remove the oldest version of java if any:
 ```bash
-sudo yum install java-1.8.0
+sudo yum install java -y
 ```
 ```bash
 sudo yum remove java-1.7.0-openjdk
