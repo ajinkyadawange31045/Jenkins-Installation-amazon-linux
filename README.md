@@ -57,4 +57,13 @@ Add the user credentials and save it.
 
 Installation and configuration are completed and now you can start creating the Jenkins jobs.
 
+Then when you type your <ec2-instance-ip>:jenkins-port-number(i.e.8080), we get a page, install required plugins. Before that we need to put the administrative password which we have copied previously.
+
+![Getting Started](./getting started.png)
+
+
+Then create your own account and and signup
+There you go! You will see the dashboard page.
+
+![Getting Started](./home-page.png)
 Source - https://www.jenkins.io/doc/book/installing/linux/#fedora
