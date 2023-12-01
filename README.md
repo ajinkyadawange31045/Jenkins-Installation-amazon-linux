@@ -50,7 +50,9 @@ sudo systemctl status jenkins
 ```
 Connect to http://<your_server_public_DNS>:8080 from your browser. You will be able to access Jenkins through its management interface:
 Copy the path and get the password from the server:
+```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
 
 Install the suggested plugins.
 Add the user credentials and save it.
