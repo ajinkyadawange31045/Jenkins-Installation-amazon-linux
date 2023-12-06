@@ -33,7 +33,9 @@ sudo dnf upgrade
 Install Jenkins using the below command:
 ```bash
 sudo dnf install jenkins
-sudo systemctl daemon-reload
+```
+```bash
+sudo dnf install jenkins
 ```
 
 Start and enable the Jenkins service:
